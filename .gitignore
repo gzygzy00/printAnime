@@ -1,2 +1,3 @@
 /.cache
 /node_modules
+#parcel build src/index.html --public-url .
