@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!--  <meta name="viewport"-->
+  <!--        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
+  <meta name="viewport"
+        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>hello</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    #html {
+      word-break: break-all;
+    }
+
+    #TaiJi {
+      position: fixed;
+      left: 50%;
+      top: 20px;
+      transform: translate(-25%);
+      box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.5);
+    }
+
+    #TaiJi::before, #TaiJi::after {
+      content: '';
+      display: block;
+      height: 100px;
+      width: 100px;
+    }
+
+    @media (max-width: 500px) {
+      #html {
+        height: 50vh;
+        overflow: auto;
+      }
+
+      #TaiJi {
+        position: relative;
+        height: 50vh;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+      }
+    }
+  </style>
+</head>
+<body>
+<style id="style"></style>
+<div id="html"></div>
+<div id="TaiJi"></div>
+<script src="main.js"></script>
+</body>
+</html>
