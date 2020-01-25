@@ -1,0 +1,35 @@
+#html {
+  word-break: break-all;
+}
+
+#TaiJi {
+  position: fixed;
+  left: 50%;
+  top: 20px;
+  transform: translate(-25%);
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+#TaiJi::before, #TaiJi::after {
+  content: '';
+  display: block;
+  height: 100px;
+  width: 100px;
+}
+
+@media (max-width: 500px) {
+  #html {
+    height: 50vh;
+    overflow: auto;
+  }
+
+  #TaiJi {
+    position: relative;
+    height: 50vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+}
+
+/*# sourceMappingURL=/common.404fed7b.css.map */
